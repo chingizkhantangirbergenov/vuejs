@@ -61,7 +61,7 @@
 			}
 		},
 		created() {
-			let api = "http://192.168.43.206:8085/companies"
+			let api = "http://10.110.118.87:8085/companies"
 			this.$http.get(api).then(function(data){
 				console.log(data)
 				this.companies = data.body
