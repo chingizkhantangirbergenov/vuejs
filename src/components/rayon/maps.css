@@ -1,0 +1,20 @@
+		h1{
+			padding-top: 70px; 
+			color: #FFFFFF;
+		}
+    svg{
+    	padding-top: 50px;
+      width: 60%;
+      height:60%;
+    }
+		 path{
+			fill: rgb(44, 53, 71);
+			stroke: #FFFFFF;
+			transition: fill 0.3s ;
+		}
+		 path:hover {
+			fill:#000;
+		}
+		body {
+		
+	background-image: url("back.png");}

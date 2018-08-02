@@ -108,8 +108,10 @@
 	font-family: 'Play', sans-serif;
 	margin-top:35px;
 }
-body {
-      background: url(https://look.com.ua/pic/201209/1280x720/look.com.ua-27529.jpg);     
-      background-size: contain;
-    }
+     body {
+
+	background: url("../assets/back.png");
+    height: 3000px;
+}
+    
 </style>

@@ -1,9 +1,9 @@
 <template>
   <v-app class="main">
     <div></div>
-  <v-navigation-drawer fixed v-model="sideNav"> 
-      <v-list class="navFont"> 
-        <v-list-tile>
+  <v-navigation-drawer floating disable-resize-watcher app  v-model="sideNav"> 
+      <v-list> 
+        <v-list-tile exact-active-class>
         <v-list-tile-action>
           <v-icon>pageview </v-icon>
         </v-list-tile-action>
@@ -32,10 +32,10 @@
     
     <main>
       
- <v-toolbar class="light-blue accent-3">
+ <v-toolbar scroll-off-screen class="blue-grey darken-1">
         <v-toolbar-side-icon @click.native.stop="sideNav=!sideNav" class="hidden-sm-and-up"></v-toolbar-side-icon>
     <v-toolbar-title>
-      <router-link to="/" tag="span" style="cursor: pointer">Атамекен</router-link></v-toolbar-title>
+      <router-link to="/" tag="span" style="cursor: pointer"><img src="@/assets/atameken.png"></router-link></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-xs-only">
       <v-btn flat v-for="item in menuItems"
@@ -59,9 +59,9 @@ export default {
     return {
       sideNav: false,
       menuItems: [
-          { icon: 'person_outline', title: 'Регистрация', link: '/signup' },
+          { icon: 'person_outline', title: 'Регистрация' },
           { icon: 'location_city', title: 'Компании', link: '/search' },
-          { icon: 'help_outline', title: 'Поддержка', link: '/help' },
+          { icon: 'help_outline', title: 'Поддержка' },
           
         ],
 
@@ -75,5 +75,5 @@ export default {
   .navFont {
     font-family: 'Titillium Web', sans-serif;
   }
-  
+
 </style>
