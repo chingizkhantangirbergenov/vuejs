@@ -24,7 +24,7 @@ import ZKO from '@/components/rayon/zko'
 import Atyrau from '@/components/rayon/atyrauskaya'
 import Kostanay from '@/components/rayon/kostanayskaya'
 Vue.use(Router)
-
+ 
 export default new Router({
   routes: [
     {
