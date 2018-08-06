@@ -196,29 +196,25 @@
 </template>
 
 <style >
-    h1 {
-      color: #FFFFFF;
-    }
+
     svg {height: 70%;
     width: 70%; 
-      margin-top: 38.52px;
+    padding-top: 20px;
       position: relative;
       top: 0;
       left: 0
     }
      path{
-      fill: rgb(44,53,71);
+      fill: #64B5F6;
       stroke: #FFFFFF;
       transition: fill 0.3s ;
     }
      path:hover {
-      fill:#000;
+      fill:#0D47A1;
     }
     h1{
       padding-top: 45px;
-    }
-    body {    
-      background-size: cover;
-      background-image: url(../assets/back.png);
+      font-family: "HelveticaNeue-Light";
+
     }
   </style>

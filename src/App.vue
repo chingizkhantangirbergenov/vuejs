@@ -32,7 +32,7 @@
     
     <main>
       
- <v-toolbar scroll-off-screen class="blue-grey darken-1">
+ <v-toolbar scroll-off-screen class="blue lighten-4">
         <v-toolbar-side-icon @click.native.stop="sideNav=!sideNav" class="hidden-sm-and-up"></v-toolbar-side-icon>
     <v-toolbar-title>
       <router-link to="/" tag="span" style="cursor: pointer"><img src="@/assets/atameken.png"></router-link></v-toolbar-title>
@@ -71,9 +71,8 @@ export default {
 }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
   .navFont {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "HelveticaNeue-Light";
   }
 
 </style>

@@ -80,33 +80,26 @@
 </center>
 </html>
 </template>
-<style>
-	h1{
-      padding-top: 70px; 
-      color: #FFFFFF;
-    }
-    svg{
-      padding-top: 50px;
-      width: 40%;
-      height:40%;;
+<style >
+
+    svg {height: 50%;
+    width: 50%; 
+      position: relative;
+      top: 0;
+      left: 0
     }
      path{
-      fill: rgb(44, 53, 71);
+      fill: #64B5F6;
       stroke: #FFFFFF;
       transition: fill 0.3s ;
     }
      path:hover {
-      fill:#000;
+      fill:#0D47A1;
     }
-    body {
-    
-  background-image: url("../../assets/back.png");
-   background-size: cover;}
-
-  #show-companies {
-  max-width: 70%;
-  margin:0 auto;
-}
+    h1{
+      padding-top: 45px;
+      font-family: "Helvetica";
+    }
 .single-company {
 
 text-align: center;
@@ -114,10 +107,11 @@ text-align: center;
   margin:20px 0;
   box-sizing: border-box;
   width: 70%;
-    background: #546E7A;
-  font-family: 'Play', sans-serif;
-  box-shadow: 0  0 10px rgba(0,0,0,.68); }
-</style>	
+    background: #BBDEFB;
+ font-family: "Helvetica Neue";
+  box-shadow: 5  5 10px rgba(0,0,0,.68);
+  margin-bottom: -10px;
+}
 </style>
 <script>
   export default {

@@ -18,7 +18,7 @@
                         <option value="" selected="selected">Район</option>
 						<option v-for="address in addresses" v-bind:value="address.id" >{{address.region}}</option>
 					</select>	
-					<input type="search" :disabled="regionSearch2.length == 0" v-model="nameSearch" placeholder="Наименование"  v-on:change="handleSubmit();" class="classic1" />	
+					<input type="search" :disabled="regionSearch2.length == 0" v-model="nameSearch" placeholder="Название"  v-on:change="handleSubmit();" class="classic1" />	
 					<input type="search" :disabled="regionSearch2.length == 0" v-model="otraslSearch" placeholder="Отрасль"  v-on:change="handleSubmit();" class="classic1" />
 					</v-flex>
 					<div v-for="company in searched" class="single-company"> 
@@ -134,6 +134,8 @@
   line-height: 1.5em;
   width: 24.2%;
   padding: 0.5em 3.5em 0.5em 1em;
+  border-color: black;
+    border-style: solid;
 
   /* reset */
 
@@ -152,9 +154,11 @@ select {
   border-radius: 4px;
   display: inline-block;
   font: inherit;
-  width: 25%;
+  width: 24%;
   line-height: 1.5em;
   padding: 0.5em 3.5em 0.5em 1em;
+  border-color: black;
+    border-style: solid;
 
   /* reset */
 
@@ -171,8 +175,8 @@ select {
 
 select.classic {
   background-image:
-    linear-gradient(45deg, transparent 50%, blue 50%),
-    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
     linear-gradient(to right, #808080, #808080);
   background-position:
     calc(100% - 20px) calc(1em + 2px),
@@ -199,7 +203,7 @@ select.classic:focus {
     5px 5px,
     2.5em 2.5em;
   background-repeat: no-repeat;
-  border-color: grey;
+  border-color: black;
   outline: 0;
 }
 
@@ -212,22 +216,16 @@ select.classic:focus {
 	margin:20px 0;
 	box-sizing: border-box;
 	width: 100%;
-    background: #546E7A;
-	font-family: 'Play', sans-serif;
+    background: #BBDEFB;
+	font-family: "Helvetica Neue";
 	box-shadow: 0 0 10px rgba(0,0,0,.68);
 	left:50%;
 }
 .h1x1 {
 	text-align: center;
-	font-family: 'Play', sans-serif;
+	font-family: "HelveticaNeue-Light";
 	padding-top: 40px;
 	padding-bottom: 40px;
-	color: #ffff;
-}
-body {
-
-	background: url("../assets/back.png");
-    height: cover;
 }
 
 </style>

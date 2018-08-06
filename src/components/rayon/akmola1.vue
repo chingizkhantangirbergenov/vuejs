@@ -277,33 +277,27 @@
 </script>
 
 <style >
-        h1{
-      padding-top: 70px; 
-      color: #FFFFFF;
+    h1 {
+    font-family: "HelveticaNeue";
     }
-    svg{
-      padding-top: 50px;
-      width: 50%;
-      height:50%;
+    svg {height: 50%;
+    width: 50%; 
+      position: relative;
+      top: 0;
+      left: 0
     }
      path{
-      fill: rgb(44, 53, 71);
+      fill: #64B5F6;
       stroke: #FFFFFF;
       transition: fill 0.3s ;
     }
      path:hover {
-      fill:#000;
+      fill:#0D47A1;
     }
-    body {
-    
-  background-image: url("../../assets/back.png");
-  background-size: cover;}
-
-  #show-companies {
-  max-width: 70%;
-  margin:0 auto;
-  position: relative;
-}
+    h1{
+      padding-top: 45px;
+      font-family: "Helvetica";
+    }
 .single-company {
 
 text-align: center;
@@ -311,8 +305,8 @@ text-align: center;
   margin:20px 0;
   box-sizing: border-box;
   width: 70%;
-    background: #546E7A;
-  font-family: 'Play', sans-serif;
+    background: #BBDEFB;
+ font-family: "Helvetica Neue";
   box-shadow: 5  5 10px rgba(0,0,0,.68);
   margin-bottom: -10px;
 }
