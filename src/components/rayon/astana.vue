@@ -121,25 +121,25 @@ text-align: center;
     methods: {
             
        fetchAddress0101() {
-        let api = "http://localhost:8085/company/address/0101" 
+        let api = "http://78.40.108.19:8080/company/address/0101" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0102() {
-        let api = "http://localhost:8085/company/address/0102" 
+        let api = "http://78.40.108.19:8080/company/address/0102" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0103() {
-        let api = "http://localhost:8085/company/address/0103" 
+        let api = "http://78.40.108.19:8080/company/address/0103" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0104() {
-        let api = "http://localhost:8085/company/address/0104" 
+        let api = "http://78.40.108.19:8080/company/address/0104" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body

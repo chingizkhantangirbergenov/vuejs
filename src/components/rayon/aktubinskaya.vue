@@ -166,80 +166,80 @@ text-align: center;
     methods: {
             
        fetchAddress0401() {
-        let api = "http://localhost:8085/company/address/0401" 
+        let api = "http://78.40.108.19:8080/company/address/0401" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0402() {
-        let api = "http://localhost:8085/company/address/0402" 
+        let api = "http://78.40.108.19:8080/company/address/0402" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0403() {
-        let api = "http://localhost:8085/company/address/0403" 
+        let api = "http://78.40.108.19:8080/company/address/0403" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0404() {
-        let api = "http://localhost:8085/company/address/0404" 
+        let api = "http://78.40.108.19:8080/company/address/0404" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress0405() {
-        let api = "http://localhost:8085/company/address/0405" 
+        let api = "http://78.40.108.19:8080/company/address/0405" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0406() {
-        let api = "http://localhost:8085/company/address/0406" 
+        let api = "http://78.40.108.19:8080/company/address/0406" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0407() {
-        let api = "http://localhost:8085/company/address/0407" 
+        let api = "http://78.40.108.19:8080/company/address/0407" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0408() {
-        let api = "http://localhost:8085/company/address/0408" 
+        let api = "http://78.40.108.19:8080/company/address/0408" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0409() {
-        let api = "http://localhost:8085/company/address/0409" 
+        let api = "http://78.40.108.19:8080/company/address/0409" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0410() {
-        let api = "http://localhost:8085/company/address/0410" 
+        let api = "http://78.40.108.19:8080/company/address/0410" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0411() {
-        let api = "http://localhost:8085/company/address/0411" 
+        let api = "http://78.40.108.19:8080/company/address/0411" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0412() {
-        let api = "http://localhost:8085/company/address/0412" 
+        let api = "http://78.40.108.19:8080/company/address/0412" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,fetchAddress0413() {
-        let api = "http://localhost:8085/company/address/0413" 
+        let api = "http://78.40.108.19:8080/company/address/0413" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body

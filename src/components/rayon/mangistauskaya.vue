@@ -154,49 +154,49 @@ text-align: center;
     methods: {
             
        fetchAddress1201() {
-        let api = "http://localhost:8085/company/address/1201" 
+        let api = "http://78.40.108.19:8080/company/address/1201" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1202() {
-        let api = "http://localhost:8085/company/address/1202" 
+        let api = "http://78.40.108.19:8080/company/address/1202" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1203() {
-        let api = "http://localhost:8085/company/address/1203" 
+        let api = "http://78.40.108.19:8080/company/address/1203" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1204() {
-        let api = "http://localhost:8085/company/address/1204" 
+        let api = "http://78.40.108.19:8080/company/address/1204" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1205() {
-        let api = "http://localhost:8085/company/address/1205" 
+        let api = "http://78.40.108.19:8080/company/address/1205" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1206() {
-        let api = "http://localhost:8085/company/address/1206" 
+        let api = "http://78.40.108.19:8080/company/address/1206" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1207() {
-        let api = "http://localhost:8085/company/address/1207" 
+        let api = "http://78.40.108.19:8080/company/address/1207" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body

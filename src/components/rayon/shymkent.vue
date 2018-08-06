@@ -138,28 +138,28 @@ text-align: center;
     methods: {
             
        fetchAddress1701() {
-        let api = "http://localhost:8085/company/address/1701" 
+        let api = "http://78.40.108.19:8080/company/address/1701" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1702() {
-        let api = "http://localhost:8085/company/address/1702" 
+        let api = "http://78.40.108.19:8080/company/address/1702" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1703() {
-        let api = "http://localhost:8085/company/address/1703" 
+        let api = "http://78.40.108.19:8080/company/address/1703" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1704() {
-        let api = "http://localhost:8085/company/address/1704" 
+        let api = "http://78.40.108.19:8080/company/address/1704" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
