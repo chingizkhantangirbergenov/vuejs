@@ -72,47 +72,20 @@
             <h3>Регион:  {{company.region}}</h3>
             <h4>БИН:  {{company.bin}}</h4>
             <h4>Отрасль:  {{company.otrasl}}</h4>
-            <a>Aдрес:  {{company.address}}</a>
+            <h4>Aдрес:  {{company.address}}</h4>
             <h4>Почта:  {{company.mail}}</h4>
-            <a>Телефон:  {{company.phone}}</a>
+            <h4>Телефон:  {{company.phone}}</h4>
           </div>
 </body>
 </center>
 </html>
 </template>
-<style >
 
-    svg {height: 50%;
-    width: 50%; 
-      position: relative;
-      top: 0;
-      left: 0
-    }
-     path{
-      fill: #64B5F6;
-      stroke: #FFFFFF;
-      transition: fill 0.3s ;
-    }
-     path:hover {
-      fill:#0D47A1;
-    }
-    h1{
-      padding-top: 45px;
-      font-family: "Helvetica";
-    }
-.single-company {
 
-text-align: center;
-  padding: 20px;
-  margin:20px 0;
-  box-sizing: border-box;
-  width: 70%;
-    background: #BBDEFB;
- font-family: "Helvetica Neue";
-  box-shadow: 5  5 10px rgba(0,0,0,.68);
-  margin-bottom: -10px;
-}
+<style lang="scss">
+@import 'maps.css';
 </style>
+
 <script>
   export default {
     
@@ -138,28 +111,28 @@ text-align: center;
     methods: {
             
        fetchAddress1701() {
-        let api = "http://78.40.108.19:8080/company/address/1701" 
+        let api = "http://192.168.43.206:8085/company/address/1701" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1702() {
-        let api = "http://78.40.108.19:8080/company/address/1702" 
+        let api = "http://192.168.43.206:8085/company/address/1702" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1703() {
-        let api = "http://78.40.108.19:8080/company/address/1703" 
+        let api = "http://192.168.43.206:8085/company/address/1703" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body
       })
     }  ,
     fetchAddress1704() {
-        let api = "http://78.40.108.19:8080/company/address/1704" 
+        let api = "http://192.168.43.206:8085/company/address/1704" 
         this.$http.get(api).then(function(data){
           console.log(data)
           this.addresses  = data.body

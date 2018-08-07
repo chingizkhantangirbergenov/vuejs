@@ -18,17 +18,17 @@
                         <option value="" selected="selected">Район</option>
 						<option v-for="address in addresses" v-bind:value="address.id" >{{address.region}}</option>
 					</select>	
-					<input type="search" :disabled="regionSearch2.length == 0" v-model="nameSearch" placeholder="Название"  v-on:change="handleSubmit();" class="classic1" />	
-					<input type="search" :disabled="regionSearch2.length == 0" v-model="otraslSearch" placeholder="Отрасль"  v-on:change="handleSubmit();" class="classic1" />
+					<input type="search" v-model="nameSearch" placeholder="Название"  v-on:change="handleSubmit();" class="classic1" />	
+					<input type="search" v-model="otraslSearch" placeholder="Отрасль"  v-on:change="handleSubmit();" class="classic1" />
 					</v-flex>
 					<div v-for="company in searched" class="single-company"> 
 						<h2>Название:{{company.name}}</h2>
 						<h3>Регион:  {{company.region}}</h3>
 						<h4>БИН:  {{company.bin}}</h4>
 						<h4>Отрасль:  {{company.otrasl}}</h4>
-						<a>Aдрес:  {{company.address}}</a>
+						<h4>Aдрес:  {{company.address}}</h4>
 						<h4>Почта:  {{company.mail}}</h4>
-						<a>Телефон:  {{company.phone}}</a>
+						<h4>Телефон:  {{company.phone}}</h4>
 					</div>
 				</div>
             
@@ -70,14 +70,14 @@
             
             
 			fetchCompany() {
-				let api = "http://78.40.108.19:8080/companies"
+				let api = "http://192.168.43.206:8085/companies"
 				this.$http.get(api).then(function(data){
 					console.log(data)
 					this.companies = data.body
 				})
 			},
 			fetchRegion() {
-				let api = "http://78.40.108.19:8080/company/regions"
+				let api = "http://192.168.43.206:8085/company/regions"
 				this.$http.get(api).then(function(data){
 					console.log(data)
 					this.regions = data.body
@@ -89,7 +89,7 @@
 				})
 			},
 			fetchAddress() {
-				let api = "http://78.40.108.19:8080/address/filter/" + this.regionSearch2 
+				let api = "http://192.168.43.206:8085/address/filter/" + this.regionSearch2 
 			    
 			    
 				this.$http.get(api).then(function(data){
@@ -100,7 +100,7 @@
 		    handleSubmit() {
 		    	 console.log(this.addressSearch + "-----------------------------------------")
 					
-		    	this.$http.get("http://78.40.108.19:8080/company/filter", {params:  {
+		    	this.$http.get("http://192.168.43.206:8085/company/filter", {params:  {
 		    		regionID: this.regionSearch2,
 		    		addressID: this.addressSearch,
 		    		name: this.nameSearch,
@@ -216,7 +216,6 @@ select.classic:focus {
 	margin:20px 0;
 	box-sizing: border-box;
 	width: 100%;
-    background: #BBDEFB;
 	font-family: "Helvetica Neue";
 	box-shadow: 0 0 10px rgba(0,0,0,.68);
 	left:50%;

@@ -1,20 +1,31 @@
-		h1{
-			padding-top: 70px; 
-			color: #FFFFFF;
-		}
-    svg{
-    	padding-top: 50px;
-      width: 60%;
-      height:60%;
-    }
-		 path{
-			fill: rgb(44, 53, 71);
-			stroke: #FFFFFF;
-			transition: fill 0.3s ;
-		}
-		 path:hover {
-			fill:#000;
-		}
-		body {
-		
-	background-image: url("back.png");}
+
+svg {height: 50%;
+	width: 50%; 
+	position: relative;
+	top: 0;
+	left: 0
+}
+path, ellipse{
+	fill: #004a7a;
+	stroke: #FFFFFF;
+	transition: fill 0.3s ;
+}
+path:hover {
+	fill:#0091EA;
+}
+ellipse:hover{
+	fill:#0091EA;
+}
+h1{
+	padding-top: 45px;
+	font-family: "Helvetica";
+}
+.single-company {
+	padding: 20px;
+	margin:20px 0;
+	box-sizing: border-box;
+	width: 50%;
+	font-family: "Helvetica Neue";
+	box-shadow: 0 0 10px rgba(0,0,0,.68);
+	left:50%;
+}
